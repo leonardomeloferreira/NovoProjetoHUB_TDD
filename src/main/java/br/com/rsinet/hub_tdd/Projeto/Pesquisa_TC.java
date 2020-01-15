@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -23,6 +24,7 @@ public class Pesquisa_TC {
 	public static void iniciaNavegador() throws Exception {
 		ExcelUtils.setExcelFile(Constant.Path_TestData, "Busca");
 		driver = new ChromeDriver();
+		Reporter.log("Abrindo o navegador");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 	}
@@ -30,9 +32,9 @@ public class Pesquisa_TC {
 	@Test(priority = 0)
 	public void iniciaTest() throws Exception {
 		driver.get("https://www.advantageonlineshopping.com/");
-
+		Reporter.log("Acessando a loja");
 		Pesquisa_Action.Execute_Busca(driver);
-		
+		Reporter.log("Executando a busca valida pela lupa");
 
 		assertEquals(true, Category_Page.lnk_Result(driver).getText().contains(ExcelUtils.getCellData(1, 1).toUpperCase()));
 
@@ -40,8 +42,9 @@ public class Pesquisa_TC {
 	@Test(priority = 1)
 	public void iniciaTestInvalido() throws Exception {
 		driver.get("https://www.advantageonlineshopping.com/");
-		
+		Reporter.log("Acessando a loja");
 		Pesquisa_Action.Execute_Busca_Invalida(driver);
+		Reporter.log("Executando a busca invalida pela lupa");
 		String sInvalido = Category_Page.lnk_NoResult(driver).getText();
 		
 		assertEquals(true, sInvalido.contains("No results for"));
@@ -49,5 +52,6 @@ public class Pesquisa_TC {
 	@AfterClass
 	public static void fechaNavegador() {
 		driver.quit();
+		Reporter.log("Fechando o navegador");
 	}
 }

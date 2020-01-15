@@ -3,6 +3,7 @@ package br.com.rsinet.hub_tdd.Projeto;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -20,6 +21,7 @@ private static ChromeDriver driver;
 	public static void iniciaNavegador() throws Exception {
 		ExcelUtils.setExcelFile(Constant.Path_TestData, "Busca pela home");
 		driver = new ChromeDriver();
+		Reporter.log("Abrindo o navegador");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 	}
@@ -27,13 +29,14 @@ private static ChromeDriver driver;
 	@Test
 	public void iniciaTest() throws Exception {
 		driver.get("https://www.advantageonlineshopping.com/");
-
+		Reporter.log("Acessando a loja");
 		Category_Action.Execute_BuscaHome(driver);
-
+		Reporter.log("Executando a busca de produto pela home");
 	
 	}
 	@AfterClass
 	public static void fechaNavegador() {
 		driver.quit();
+		Reporter.log("Fechando o navegador");
 	}
 }

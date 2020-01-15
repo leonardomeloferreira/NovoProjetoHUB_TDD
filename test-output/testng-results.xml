@@ -1,29 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
+    <line>
+      <![CDATA[Abrindo o navegador]]>
+    </line>
+    <line>
+      <![CDATA[Acessando a loja]]>
+    </line>
+    <line>
+      <![CDATA[Executando o registro valido na loja]]>
+    </line>
+    <line>
+      <![CDATA[Executando o registro invalido na loja]]>
+    </line>
+    <line>
+      <![CDATA[Fechando o navegador]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18776" started-at="2020-01-15T16:33:36Z" finished-at="2020-01-15T16:33:55Z">
+  <suite name="Default suite" duration-ms="21514" started-at="2020-01-15T18:49:35Z" finished-at="2020-01-15T18:49:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18776" started-at="2020-01-15T16:33:36Z" finished-at="2020-01-15T16:33:55Z">
-      <class name="br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC">
-        <test-method status="PASS" signature="iniciaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@77caeb3e]" name="iniciaNavegador" is-config="true" duration-ms="11913" started-at="2020-01-15T16:33:36Z" finished-at="2020-01-15T16:33:48Z">
+    <test name="Default test" duration-ms="21514" started-at="2020-01-15T18:49:35Z" finished-at="2020-01-15T18:49:56Z">
+      <class name="br.com.rsinet.hub_tdd.Projeto.Cadastra_TC">
+        <test-method status="PASS" signature="iniciaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Cadastra_TC@77caeb3e]" name="iniciaNavegador" is-config="true" duration-ms="10650" started-at="2020-01-15T18:49:35Z" finished-at="2020-01-15T18:49:46Z">
           <reporter-output>
+            <line>
+              <![CDATA[Abrindo o navegador]]>
+            </line>
           </reporter-output>
         </test-method> <!-- iniciaNavegador -->
-        <test-method status="PASS" signature="iniciaTest()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@77caeb3e]" name="iniciaTest" duration-ms="4527" started-at="2020-01-15T16:33:48Z" finished-at="2020-01-15T16:33:53Z">
+        <test-method status="PASS" signature="inciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Cadastra_TC@77caeb3e]" name="inciaTeste" duration-ms="6569" started-at="2020-01-15T18:49:46Z" finished-at="2020-01-15T18:49:52Z">
           <reporter-output>
+            <line>
+              <![CDATA[Acessando a loja]]>
+            </line>
+            <line>
+              <![CDATA[Executando o registro valido na loja]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- iniciaTest -->
-        <test-method status="PASS" signature="iniciaTestInvalido()[pri:1, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@77caeb3e]" name="iniciaTestInvalido" duration-ms="1653" started-at="2020-01-15T16:33:53Z" finished-at="2020-01-15T16:33:54Z">
+        </test-method> <!-- inciaTeste -->
+        <test-method status="PASS" signature="inciaTesteComFalha()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Cadastra_TC@77caeb3e]" name="inciaTesteComFalha" duration-ms="3668" started-at="2020-01-15T18:49:52Z" finished-at="2020-01-15T18:49:56Z">
           <reporter-output>
+            <line>
+              <![CDATA[Executando o registro invalido na loja]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- iniciaTestInvalido -->
-        <test-method status="PASS" signature="fechaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@77caeb3e]" name="fechaNavegador" is-config="true" duration-ms="644" started-at="2020-01-15T16:33:54Z" finished-at="2020-01-15T16:33:55Z">
+        </test-method> <!-- inciaTesteComFalha -->
+        <test-method status="PASS" signature="fechaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Cadastra_TC@77caeb3e]" name="fechaNavegador" is-config="true" duration-ms="608" started-at="2020-01-15T18:49:56Z" finished-at="2020-01-15T18:49:56Z">
           <reporter-output>
+            <line>
+              <![CDATA[Fechando o navegador]]>
+            </line>
           </reporter-output>
         </test-method> <!-- fechaNavegador -->
-      </class> <!-- br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC -->
+      </class> <!-- br.com.rsinet.hub_tdd.Projeto.Cadastra_TC -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -10,7 +10,7 @@ import br.com.rsinet.hub_tdd.ProjetoTDD.pageObject.LogIn_Page;
 import br.com.rsinet.hub_tdd.ProjetoTDD.pageObject.Register_Page;
 import br.com.rsinet.hub_tdd.ProjetoTDD.utility.ExcelUtils;
 
-public class Register_Action {
+public class Registra_Action {
 
 	public static void Execute(WebDriver driver) throws Exception {
 

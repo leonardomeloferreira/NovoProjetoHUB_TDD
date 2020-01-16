@@ -8,8 +8,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import br.com.rsinet.hub_tdd.ProjetoTDD.pageObject.Category_Page;
 import br.com.rsinet.hub_tdd.ProjetoTDD.pageObject.Home_Page;
-import br.com.rsinet.hub_tdd.ProjetoTDD.util.Screenshot;
 import br.com.rsinet.hub_tdd.ProjetoTDD.utility.ExcelUtils;
+import br.com.rsinet.hub_tdd.ProjetoTDD.utility.Screenshot;
 
 public class Pesquisa_Action {
 

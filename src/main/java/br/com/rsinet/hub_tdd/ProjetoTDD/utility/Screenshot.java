@@ -1,5 +1,5 @@
 
-package br.com.rsinet.hub_tdd.ProjetoTDD.util;
+package br.com.rsinet.hub_tdd.ProjetoTDD.utility;
 
 import java.io.File;
 import java.io.IOException;

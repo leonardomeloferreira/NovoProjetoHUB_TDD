@@ -5,8 +5,8 @@ import org.openqa.selenium.WebDriver;
 
 import br.com.rsinet.hub_tdd.ProjetoTDD.pageObject.Category_Page;
 import br.com.rsinet.hub_tdd.ProjetoTDD.pageObject.Home_Page;
-import br.com.rsinet.hub_tdd.ProjetoTDD.util.Screenshot;
 import br.com.rsinet.hub_tdd.ProjetoTDD.utility.ExcelUtils;
+import br.com.rsinet.hub_tdd.ProjetoTDD.utility.Screenshot;
 
 public class Category_Action {
 
@@ -21,4 +21,12 @@ public class Category_Action {
 		Screenshot.captureScreenShot(driver);
 	}
 	
+		public static void Execute_BuscaHomeInvalida(WebDriver driver) {
+			
+			
+			JavascriptExecutor executor = (JavascriptExecutor) driver;
+			executor.executeScript("arguments[0].click();", Home_Page.lnk_Detalhes(driver));
+			
+			
+		}
 }

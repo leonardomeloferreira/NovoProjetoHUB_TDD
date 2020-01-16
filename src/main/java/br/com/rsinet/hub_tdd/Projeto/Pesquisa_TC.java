@@ -8,7 +8,9 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import br.com.rsinet.hub_tdd.ProjetoTDD.appModules.Pesquisa_Action;
@@ -20,7 +22,7 @@ public class Pesquisa_TC {
 
 	private static ChromeDriver driver;
 	
-	@BeforeClass
+	@BeforeMethod
 	public static void iniciaNavegador() throws Exception {
 		ExcelUtils.setExcelFile(Constant.Path_TestData, "Busca");
 		driver = new ChromeDriver();
@@ -31,7 +33,7 @@ public class Pesquisa_TC {
 	
 	@Test(priority = 0)
 	public void iniciaTest() throws Exception {
-		driver.get("https://www.advantageonlineshopping.com/");
+		driver.get(Constant.URL);
 		Reporter.log("Acessando a loja");
 		Pesquisa_Action.Execute_Busca(driver);
 		Reporter.log("Executando a busca valida pela lupa");
@@ -41,15 +43,15 @@ public class Pesquisa_TC {
 	}
 	@Test(priority = 1)
 	public void iniciaTestInvalido() throws Exception {
-		driver.get("https://www.advantageonlineshopping.com/");
+		driver.get(Constant.URL);
 		Reporter.log("Acessando a loja");
 		Pesquisa_Action.Execute_Busca_Invalida(driver);
 		Reporter.log("Executando a busca invalida pela lupa");
 		String sInvalido = Category_Page.lnk_NoResult(driver).getText();
 		
 		assertEquals(true, sInvalido.contains("No results for"));
-	}
-	@AfterClass
+	}	
+	@AfterMethod
 	public static void fechaNavegador() {
 		driver.quit();
 		Reporter.log("Fechando o navegador");

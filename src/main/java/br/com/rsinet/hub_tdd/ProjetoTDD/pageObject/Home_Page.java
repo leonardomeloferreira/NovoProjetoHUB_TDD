@@ -48,4 +48,26 @@ public class Home_Page {
 		
 		return element;
 	}
+	public static WebElement lnk_Laptop_Home_Invalido(WebDriver driver) {
+		
+		element = driver.findElement(By.linkText("View Details"));
+		
+		return element;
+	}
+	public static WebElement lnk_Detalhes(WebDriver driver ) {
+		
+		element = driver.findElement(By.id("details_10"));
+		
+		return element;
+	}
+	
+	
+	public static WebElement txt_Notebook_Home(WebDriver driver ) {
+		
+		element = driver.findElement(By.xpath("//*[@id=\"popular_items\"]/div/div[2]/p"));
+		
+		return element;
+	}
+	
+	
 }

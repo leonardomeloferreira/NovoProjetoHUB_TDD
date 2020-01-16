@@ -8,52 +8,78 @@
       <![CDATA[Acessando a loja]]>
     </line>
     <line>
-      <![CDATA[Executando o registro valido na loja]]>
+      <![CDATA[Executando a busca valida pela lupa]]>
     </line>
     <line>
-      <![CDATA[Executando o registro invalido na loja]]>
+      <![CDATA[Fechando o navegador]]>
+    </line>
+    <line>
+      <![CDATA[Abrindo o navegador]]>
+    </line>
+    <line>
+      <![CDATA[Acessando a loja]]>
+    </line>
+    <line>
+      <![CDATA[Executando a busca invalida pela lupa]]>
     </line>
     <line>
       <![CDATA[Fechando o navegador]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21514" started-at="2020-01-15T18:49:35Z" finished-at="2020-01-15T18:49:56Z">
+  <suite name="Default suite" duration-ms="32353" started-at="2020-01-16T16:37:25Z" finished-at="2020-01-16T16:37:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21514" started-at="2020-01-15T18:49:35Z" finished-at="2020-01-15T18:49:56Z">
-      <class name="br.com.rsinet.hub_tdd.Projeto.Cadastra_TC">
-        <test-method status="PASS" signature="iniciaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Cadastra_TC@77caeb3e]" name="iniciaNavegador" is-config="true" duration-ms="10650" started-at="2020-01-15T18:49:35Z" finished-at="2020-01-15T18:49:46Z">
+    <test name="Default test" duration-ms="32353" started-at="2020-01-16T16:37:25Z" finished-at="2020-01-16T16:37:58Z">
+      <class name="br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC">
+        <test-method status="PASS" signature="iniciaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@77caeb3e]" name="iniciaNavegador" is-config="true" duration-ms="10613" started-at="2020-01-16T16:37:26Z" finished-at="2020-01-16T16:37:36Z">
           <reporter-output>
             <line>
               <![CDATA[Abrindo o navegador]]>
             </line>
           </reporter-output>
         </test-method> <!-- iniciaNavegador -->
-        <test-method status="PASS" signature="inciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Cadastra_TC@77caeb3e]" name="inciaTeste" duration-ms="6569" started-at="2020-01-15T18:49:46Z" finished-at="2020-01-15T18:49:52Z">
+        <test-method status="PASS" signature="iniciaTest()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@77caeb3e]" name="iniciaTest" duration-ms="8846" started-at="2020-01-16T16:37:36Z" finished-at="2020-01-16T16:37:45Z">
           <reporter-output>
             <line>
               <![CDATA[Acessando a loja]]>
             </line>
             <line>
-              <![CDATA[Executando o registro valido na loja]]>
+              <![CDATA[Executando a busca valida pela lupa]]>
             </line>
           </reporter-output>
-        </test-method> <!-- inciaTeste -->
-        <test-method status="PASS" signature="inciaTesteComFalha()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Cadastra_TC@77caeb3e]" name="inciaTesteComFalha" duration-ms="3668" started-at="2020-01-15T18:49:52Z" finished-at="2020-01-15T18:49:56Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Executando o registro invalido na loja]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- inciaTesteComFalha -->
-        <test-method status="PASS" signature="fechaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Cadastra_TC@77caeb3e]" name="fechaNavegador" is-config="true" duration-ms="608" started-at="2020-01-15T18:49:56Z" finished-at="2020-01-15T18:49:56Z">
+        </test-method> <!-- iniciaTest -->
+        <test-method status="PASS" signature="fechaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@77caeb3e]" name="fechaNavegador" is-config="true" duration-ms="604" started-at="2020-01-16T16:37:45Z" finished-at="2020-01-16T16:37:46Z">
           <reporter-output>
             <line>
               <![CDATA[Fechando o navegador]]>
             </line>
           </reporter-output>
         </test-method> <!-- fechaNavegador -->
-      </class> <!-- br.com.rsinet.hub_tdd.Projeto.Cadastra_TC -->
+        <test-method status="PASS" signature="iniciaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@77caeb3e]" name="iniciaNavegador" is-config="true" duration-ms="9194" started-at="2020-01-16T16:37:46Z" finished-at="2020-01-16T16:37:55Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Abrindo o navegador]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- iniciaNavegador -->
+        <test-method status="PASS" signature="iniciaTestInvalido()[pri:1, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@77caeb3e]" name="iniciaTestInvalido" duration-ms="2468" started-at="2020-01-16T16:37:55Z" finished-at="2020-01-16T16:37:57Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Acessando a loja]]>
+            </line>
+            <line>
+              <![CDATA[Executando a busca invalida pela lupa]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- iniciaTestInvalido -->
+        <test-method status="PASS" signature="fechaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@77caeb3e]" name="fechaNavegador" is-config="true" duration-ms="604" started-at="2020-01-16T16:37:57Z" finished-at="2020-01-16T16:37:58Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Fechando o navegador]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- fechaNavegador -->
+      </class> <!-- br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

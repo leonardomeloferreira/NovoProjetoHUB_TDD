@@ -18,7 +18,7 @@ public class Category_Action {
 		
 		executor.executeScript("arguments[0].click();", Category_Page.lnk_Laptop(driver));
 		
-		Screenshot.captureScreenShot(driver);
+//		Screenshot.captureScreenShot(driver);
 	}
 	
 		public static void Execute_BuscaHomeInvalida(WebDriver driver) {

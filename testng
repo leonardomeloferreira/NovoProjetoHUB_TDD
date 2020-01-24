@@ -1,9 +1,0 @@
-<suite name="Test - TDD">
-<test name="ProjetoLoja">
-<classes>
-<class name="br.com.rsinet.hub_tdd.Projeto.Registra_TC" />
-<class name="br.com.rsinet.hub_tdd.Projeto.Category_TC" />
-<class name="br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC" />
-</classes>
-</test>
-</suite>

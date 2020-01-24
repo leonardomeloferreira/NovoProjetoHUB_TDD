@@ -13,14 +13,14 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import br.com.rsinet.hub_tdd.ProjetoTDD.appModules.Category_Action;
-import br.com.rsinet.hub_tdd.ProjetoTDD.pageObject.Category_Page;
+import br.com.rsinet.hub_tdd.ProjetoTDD.appModules.Categoria_Action;
+import br.com.rsinet.hub_tdd.ProjetoTDD.pageObject.Categoria_Page;
 import br.com.rsinet.hub_tdd.ProjetoTDD.pageObject.Home_Page;
 import br.com.rsinet.hub_tdd.ProjetoTDD.utility.Constant;
 import br.com.rsinet.hub_tdd.ProjetoTDD.utility.DriverFactory;
 import br.com.rsinet.hub_tdd.ProjetoTDD.utility.ExcelUtils;
 
-public class Category_TC {
+public class Categoria_TC {
 
 private static WebDriver driver;
 	
@@ -37,7 +37,7 @@ private static WebDriver driver;
 	public void iniciaTest() throws Exception {
 		DriverFactory.abrirURL(driver);
 		Reporter.log("Acessando a loja");
-		Category_Action.Execute_BuscaHome(driver);
+		Categoria_Action.Execute_BuscaHome(driver);
 		Reporter.log("Executando a busca do produto pela home");
 	
 		
@@ -46,13 +46,14 @@ private static WebDriver driver;
 	public void iniciaTestInvalido() throws Exception {
 		DriverFactory.abrirURL(driver);
 		Reporter.log("Acessando a loja");
-		Category_Action.Execute_BuscaHomeInvalida(driver);
-		Reporter.log("Executando a busca do produto pela home");
+		
 		String LaptopHomeInvalido = Home_Page.txt_Notebook_Home(driver).getText();
-		System.out.println(LaptopHomeInvalido);
-		String LaptopInvalido = Category_Page.lnk_LaptopInvalido(driver).getText();
-		System.out.println(LaptopInvalido);
-		assertEquals(LaptopHomeInvalido.contentEquals(LaptopInvalido), false);
+		Categoria_Action.Execute_BuscaHomeInvalida(driver);
+		Reporter.log("Executando a busca do produto pela home");
+		
+		String LaptopInvalido = Categoria_Page.lnk_LaptopInvalido(driver).getText();
+		
+		assertEquals(LaptopHomeInvalido.equals(LaptopInvalido), false);
 	}
 	@AfterMethod
 	public static void fechaNavegador() {

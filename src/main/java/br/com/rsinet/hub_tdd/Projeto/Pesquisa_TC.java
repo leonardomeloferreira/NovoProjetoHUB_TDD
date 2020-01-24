@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import br.com.rsinet.hub_tdd.ProjetoTDD.appModules.Pesquisa_Action;
-import br.com.rsinet.hub_tdd.ProjetoTDD.pageObject.Category_Page;
+import br.com.rsinet.hub_tdd.ProjetoTDD.pageObject.Categoria_Page;
 import br.com.rsinet.hub_tdd.ProjetoTDD.utility.Constant;
 import br.com.rsinet.hub_tdd.ProjetoTDD.utility.DriverFactory;
 import br.com.rsinet.hub_tdd.ProjetoTDD.utility.ExcelUtils;
@@ -34,7 +34,7 @@ public class Pesquisa_TC {
 		Pesquisa_Action.Execute_Busca(driver);
 		Reporter.log("Executando a busca valida pela lupa");
 
-		assertEquals(true, Category_Page.lnk_Result(driver).getText().contains(ExcelUtils.getCellData(1, 1).toUpperCase()));
+		assertEquals(true, Categoria_Page.lnk_Result(driver).getText().contains(ExcelUtils.getCellData(1, 1).toUpperCase()));
 
 	}
 	@Test(priority = 1)
@@ -43,7 +43,7 @@ public class Pesquisa_TC {
 		Reporter.log("Acessando a loja");
 		Pesquisa_Action.Execute_Busca_Invalida(driver);
 		Reporter.log("Executando a busca invalida pela lupa");
-		String sInvalido = Category_Page.lnk_NoResult(driver).getText();
+		String sInvalido = Categoria_Page.lnk_NoResult(driver).getText();
 		
 		assertEquals(true, sInvalido.contains("No results for"));
 	}	

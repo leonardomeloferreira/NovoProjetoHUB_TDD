@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class Category_Page {
+public class Categoria_Page {
 
 	public static WebElement element;
 
@@ -36,6 +36,13 @@ public class Category_Page {
 
 		return element;
 	}
+	public static WebElement header_NoResult(WebDriver driver) {
+		
+		element = driver.findElement(By.id("searchPage"));
+		
+		return element;
+	}
+
 
 	public static WebElement lnk_Result(WebDriver driver) {
 
@@ -48,6 +55,12 @@ public class Category_Page {
 
 		element = driver.findElement(By.xpath("//*[@id=\"Description\"]/h1/font/font"));
 
+		return element;
+	}
+	public static WebElement img_Notebook(WebDriver driver) {
+		
+		element = driver.findElement(By.id("mainImg"));
+		
 		return element;
 	}
 }

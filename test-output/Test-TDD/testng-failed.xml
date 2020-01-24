@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Teste-TDD]">
-  <test thread-count="5" name="NovoProjetoHUB(failed)">
+<suite name="Failed suite [Test-TDD]">
+  <test thread-count="5" name="ProjetoLoja(failed)">
     <classes>
       <class name="br.com.rsinet.hub_tdd.Projeto.Registra_TC">
         <methods>
@@ -11,5 +11,5 @@
         </methods>
       </class> <!-- br.com.rsinet.hub_tdd.Projeto.Registra_TC -->
     </classes>
-  </test> <!-- NovoProjetoHUB(failed) -->
-</suite> <!-- Failed suite [Teste-TDD] -->
+  </test> <!-- ProjetoLoja(failed) -->
+</suite> <!-- Failed suite [Test-TDD] -->

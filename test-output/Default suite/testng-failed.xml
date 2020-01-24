@@ -5,7 +5,6 @@
     <classes>
       <class name="br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC">
         <methods>
-          <include name="iniciaTest"/>
           <include name="iniciaNavegador"/>
           <include name="iniciaTestInvalido"/>
           <include name="fechaNavegador"/>

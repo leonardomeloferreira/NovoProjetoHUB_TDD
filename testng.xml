@@ -1,0 +1,10 @@
+<suite name="Teste-TDD">
+    <test name="NovoProjetoHUB">
+        <classes>
+            <class name="br.com.rsinet.hub_tdd.ProjetoTDD.utility.PastaPrint" />
+            <class name="br.com.rsinet.hub_tdd.Projeto.Registra_TC" />
+            <class name="br.com.rsinet.hub_tdd.Projeto.Categoria_TC" />
+            <class name="br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC" />
+        </classes>
+    </test>
+</suite>

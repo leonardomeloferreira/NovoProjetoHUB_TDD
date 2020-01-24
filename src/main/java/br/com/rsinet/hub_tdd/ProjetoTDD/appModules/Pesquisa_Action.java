@@ -4,12 +4,13 @@ import org.openqa.selenium.JavascriptException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import br.com.rsinet.hub_tdd.ProjetoTDD.pageObject.Category_Page;
+import br.com.rsinet.hub_tdd.ProjetoTDD.pageObject.Categoria_Page;
 import br.com.rsinet.hub_tdd.ProjetoTDD.pageObject.Home_Page;
 import br.com.rsinet.hub_tdd.ProjetoTDD.utility.ExcelUtils;
-import br.com.rsinet.hub_tdd.ProjetoTDD.utility.Screenshot;
+import br.com.rsinet.hub_tdd.ProjetoTDD.utility.Screenshots;
 
 public class Pesquisa_Action {
 
@@ -24,11 +25,12 @@ public class Pesquisa_Action {
 		Home_Page.txt_Search(driver).sendKeys(Keys.ENTER);
 		
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
-		executor.executeScript("arguments[0].click();", Category_Page.lnk_Roar(driver));
+		executor.executeScript("arguments[0].click();", Categoria_Page.lnk_Roar(driver));
 		
-//		WebDriverWait
+		Categoria_Page.img_Notebook(driver);
+
 		
-//		Screenshot.captureScreenShot(driver);
+		Screenshots.captureScreenShot(driver);
 		
 	}
 	
@@ -41,6 +43,11 @@ public class Pesquisa_Action {
 		Home_Page.txt_Search(driver).sendKeys(sBuscaInvalida);
 		Home_Page.txt_Search(driver).sendKeys(Keys.ENTER);
 		
-		Screenshot.captureScreenShot(driver);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOf(Categoria_Page.header_NoResult(driver)));
+		wait.until(ExpectedConditions.visibilityOf(Categoria_Page.lnk_NoResult(driver)));
+		
+
+		Screenshots.captureScreenShot(driver);
 	}
 }

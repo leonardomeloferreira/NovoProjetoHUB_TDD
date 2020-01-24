@@ -1,6 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
+    <line>
+      <![CDATA[Abrindo o navegador]]>
+    </line>
+    <line>
+      <![CDATA[Acessando a loja]]>
+    </line>
+    <line>
+      <![CDATA[Executando o registro valido na loja]]>
+    </line>
+    <line>
+      <![CDATA[Fechando o navegador]]>
+    </line>
+    <line>
+      <![CDATA[Abrindo o navegador]]>
+    </line>
+    <line>
+      <![CDATA[Executando o registro invalido na loja]]>
+    </line>
+    <line>
+      <![CDATA[Fechando o navegador]]>
+    </line>
+    <line>
+      <![CDATA[Abrindo o navegador]]>
+    </line>
+    <line>
+      <![CDATA[Acessando a loja]]>
+    </line>
+    <line>
+      <![CDATA[Executando a busca do produto pela home]]>
+    </line>
+    <line>
+      <![CDATA[Fechando o navegador]]>
+    </line>
+    <line>
+      <![CDATA[Abrindo o navegador]]>
+    </line>
+    <line>
+      <![CDATA[Acessando a loja]]>
+    </line>
+    <line>
+      <![CDATA[Executando a busca do produto pela home]]>
+    </line>
+    <line>
+      <![CDATA[Fechando o navegador]]>
+    </line>
     <line>
       <![CDATA[Abrindo o navegador]]>
     </line>
@@ -26,19 +71,122 @@
       <![CDATA[Fechando o navegador]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="56870" started-at="2020-01-19T14:39:46Z" finished-at="2020-01-19T14:40:43Z">
+  <suite name="Teste-TDD" duration-ms="93623" started-at="2020-01-24T18:31:24Z" finished-at="2020-01-24T18:32:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="56870" started-at="2020-01-19T14:39:46Z" finished-at="2020-01-19T14:40:43Z">
-      <class name="br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC">
-        <test-method status="PASS" signature="iniciaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@ae45eb6]" name="iniciaNavegador" is-config="true" duration-ms="10547" started-at="2020-01-19T14:39:46Z" finished-at="2020-01-19T14:39:57Z">
+    <test name="NovoProjetoHUB" duration-ms="93623" started-at="2020-01-24T18:31:24Z" finished-at="2020-01-24T18:32:58Z">
+      <class name="br.com.rsinet.hub_tdd.Projeto.Categoria_TC">
+        <test-method status="PASS" signature="iniciaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Categoria_TC@6093dd95]" name="iniciaNavegador" is-config="true" duration-ms="9216" started-at="2020-01-24T18:32:01Z" finished-at="2020-01-24T18:32:10Z">
           <reporter-output>
             <line>
               <![CDATA[Abrindo o navegador]]>
             </line>
           </reporter-output>
         </test-method> <!-- iniciaNavegador -->
-        <test-method status="PASS" signature="iniciaTest()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@ae45eb6]" name="iniciaTest" duration-ms="25725" started-at="2020-01-19T14:39:57Z" finished-at="2020-01-19T14:40:23Z">
+        <test-method status="PASS" signature="iniciaTest()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Categoria_TC@6093dd95]" name="iniciaTest" duration-ms="5922" started-at="2020-01-24T18:32:10Z" finished-at="2020-01-24T18:32:16Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Acessando a loja]]>
+            </line>
+            <line>
+              <![CDATA[Executando a busca do produto pela home]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- iniciaTest -->
+        <test-method status="PASS" signature="fechaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Categoria_TC@6093dd95]" name="fechaNavegador" is-config="true" duration-ms="594" started-at="2020-01-24T18:32:16Z" finished-at="2020-01-24T18:32:16Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Fechando o navegador]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- fechaNavegador -->
+        <test-method status="PASS" signature="iniciaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Categoria_TC@6093dd95]" name="iniciaNavegador" is-config="true" duration-ms="9180" started-at="2020-01-24T18:32:16Z" finished-at="2020-01-24T18:32:25Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Abrindo o navegador]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- iniciaNavegador -->
+        <test-method status="PASS" signature="iniciaTestInvalido()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Categoria_TC@6093dd95]" name="iniciaTestInvalido" duration-ms="5148" started-at="2020-01-24T18:32:25Z" finished-at="2020-01-24T18:32:31Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Acessando a loja]]>
+            </line>
+            <line>
+              <![CDATA[Executando a busca do produto pela home]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- iniciaTestInvalido -->
+        <test-method status="PASS" signature="fechaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Categoria_TC@6093dd95]" name="fechaNavegador" is-config="true" duration-ms="594" started-at="2020-01-24T18:32:31Z" finished-at="2020-01-24T18:32:31Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Fechando o navegador]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- fechaNavegador -->
+      </class> <!-- br.com.rsinet.hub_tdd.Projeto.Categoria_TC -->
+      <class name="br.com.rsinet.hub_tdd.Projeto.Registra_TC">
+        <test-method status="PASS" signature="iniciaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Registra_TC@6d4b1c02]" name="iniciaNavegador" is-config="true" duration-ms="10735" started-at="2020-01-24T18:31:24Z" finished-at="2020-01-24T18:31:35Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Abrindo o navegador]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- iniciaNavegador -->
+        <test-method status="PASS" signature="inciaTeste()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Registra_TC@6d4b1c02]" name="inciaTeste" duration-ms="8647" started-at="2020-01-24T18:31:35Z" finished-at="2020-01-24T18:31:44Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Acessando a loja]]>
+            </line>
+            <line>
+              <![CDATA[Executando o registro valido na loja]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- inciaTeste -->
+        <test-method status="PASS" signature="fechaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Registra_TC@6d4b1c02]" name="fechaNavegador" is-config="true" duration-ms="607" started-at="2020-01-24T18:31:44Z" finished-at="2020-01-24T18:31:44Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Fechando o navegador]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- fechaNavegador -->
+        <test-method status="PASS" signature="iniciaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Registra_TC@6d4b1c02]" name="iniciaNavegador" is-config="true" duration-ms="9240" started-at="2020-01-24T18:31:44Z" finished-at="2020-01-24T18:31:53Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Abrindo o navegador]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- iniciaNavegador -->
+        <test-method status="PASS" signature="inciaTesteComFalha()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Registra_TC@6d4b1c02]" name="inciaTesteComFalha" duration-ms="6478" started-at="2020-01-24T18:31:53Z" finished-at="2020-01-24T18:32:00Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Executando o registro invalido na loja]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- inciaTesteComFalha -->
+        <test-method status="PASS" signature="fechaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Registra_TC@6d4b1c02]" name="fechaNavegador" is-config="true" duration-ms="593" started-at="2020-01-24T18:32:00Z" finished-at="2020-01-24T18:32:01Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Fechando o navegador]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- fechaNavegador -->
+      </class> <!-- br.com.rsinet.hub_tdd.Projeto.Registra_TC -->
+      <class name="br.com.rsinet.hub_tdd.ProjetoTDD.utility.PastaPrint">
+        <test-method status="PASS" signature="PastaS()[pri:0, instance:br.com.rsinet.hub_tdd.ProjetoTDD.utility.PastaPrint@7cd62f43]" name="PastaS" is-config="true" duration-ms="8" started-at="2020-01-24T18:31:24Z" finished-at="2020-01-24T18:31:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PastaS -->
+      </class> <!-- br.com.rsinet.hub_tdd.ProjetoTDD.utility.PastaPrint -->
+      <class name="br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC">
+        <test-method status="PASS" signature="iniciaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@5622fdf]" name="iniciaNavegador" is-config="true" duration-ms="9240" started-at="2020-01-24T18:32:31Z" finished-at="2020-01-24T18:32:40Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Abrindo o navegador]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- iniciaNavegador -->
+        <test-method status="PASS" signature="iniciaTest()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@5622fdf]" name="iniciaTest" duration-ms="4133" started-at="2020-01-24T18:32:40Z" finished-at="2020-01-24T18:32:45Z">
           <reporter-output>
             <line>
               <![CDATA[Acessando a loja]]>
@@ -48,21 +196,21 @@
             </line>
           </reporter-output>
         </test-method> <!-- iniciaTest -->
-        <test-method status="PASS" signature="fechaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@ae45eb6]" name="fechaNavegador" is-config="true" duration-ms="594" started-at="2020-01-19T14:40:23Z" finished-at="2020-01-19T14:40:23Z">
+        <test-method status="PASS" signature="fechaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@5622fdf]" name="fechaNavegador" is-config="true" duration-ms="611" started-at="2020-01-24T18:32:45Z" finished-at="2020-01-24T18:32:45Z">
           <reporter-output>
             <line>
               <![CDATA[Fechando o navegador]]>
             </line>
           </reporter-output>
         </test-method> <!-- fechaNavegador -->
-        <test-method status="PASS" signature="iniciaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@ae45eb6]" name="iniciaNavegador" is-config="true" duration-ms="9218" started-at="2020-01-19T14:40:23Z" finished-at="2020-01-19T14:40:32Z">
+        <test-method status="PASS" signature="iniciaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@5622fdf]" name="iniciaNavegador" is-config="true" duration-ms="9223" started-at="2020-01-24T18:32:45Z" finished-at="2020-01-24T18:32:54Z">
           <reporter-output>
             <line>
               <![CDATA[Abrindo o navegador]]>
             </line>
           </reporter-output>
         </test-method> <!-- iniciaNavegador -->
-        <test-method status="PASS" signature="iniciaTestInvalido()[pri:1, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@ae45eb6]" name="iniciaTestInvalido" duration-ms="10168" started-at="2020-01-19T14:40:32Z" finished-at="2020-01-19T14:40:43Z">
+        <test-method status="PASS" signature="iniciaTestInvalido()[pri:1, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@5622fdf]" name="iniciaTestInvalido" duration-ms="2848" started-at="2020-01-24T18:32:54Z" finished-at="2020-01-24T18:32:57Z">
           <reporter-output>
             <line>
               <![CDATA[Acessando a loja]]>
@@ -72,7 +220,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- iniciaTestInvalido -->
-        <test-method status="PASS" signature="fechaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@ae45eb6]" name="fechaNavegador" is-config="true" duration-ms="594" started-at="2020-01-19T14:40:43Z" finished-at="2020-01-19T14:40:43Z">
+        <test-method status="PASS" signature="fechaNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC@5622fdf]" name="fechaNavegador" is-config="true" duration-ms="591" started-at="2020-01-24T18:32:57Z" finished-at="2020-01-24T18:32:58Z">
           <reporter-output>
             <line>
               <![CDATA[Fechando o navegador]]>
@@ -80,6 +228,6 @@
           </reporter-output>
         </test-method> <!-- fechaNavegador -->
       </class> <!-- br.com.rsinet.hub_tdd.Projeto.Pesquisa_TC -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- NovoProjetoHUB -->
+  </suite> <!-- Teste-TDD -->
 </testng-results>

@@ -64,7 +64,7 @@ public class Home_Page {
 	
 	public static WebElement txt_Notebook_Home(WebDriver driver ) {
 		
-		element = driver.findElement(By.xpath("//*[@id=\"popular_items\"]/div/div[2]/p"));
+		element = driver.findElement(By.name("popular_item_10_name"));
 		
 		return element;
 	}

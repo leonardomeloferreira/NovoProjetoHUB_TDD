@@ -9,6 +9,7 @@ import br.com.rsinet.hub_tdd.ProjetoTDD.pageObject.Home_Page;
 import br.com.rsinet.hub_tdd.ProjetoTDD.pageObject.LogIn_Page;
 import br.com.rsinet.hub_tdd.ProjetoTDD.pageObject.Register_Page;
 import br.com.rsinet.hub_tdd.ProjetoTDD.utility.ExcelUtils;
+import br.com.rsinet.hub_tdd.ProjetoTDD.utility.Screenshots;
 
 public class Registra_Action {
 
@@ -57,7 +58,7 @@ public class Registra_Action {
 		Register_Page.btnbx_Register(driver).click();
 		wait.until(ExpectedConditions.textToBePresentInElement(Home_Page.txt_Login(driver), sLogin));
 
-//		Screenshot.captureScreenShot(driver);
+		Screenshots.captureScreenShot(driver);
 		
 		driver.getCurrentUrl();
 
@@ -111,8 +112,8 @@ public class Registra_Action {
 		Register_Page.checkbx_Agree(driver).click();
 		Register_Page.btnbx_Register(driver).click();
 
-		WebDriverWait wait3 = new WebDriverWait(driver, 10);
-//		Screenshot.captureScreenShot(driver);
+//		WebDriverWait wait3 = new WebDriverWait(driver, 10);
+		Screenshots.captureScreenShot(driver);
 		
 	}
 }
